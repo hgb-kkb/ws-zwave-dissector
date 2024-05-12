@@ -678,6 +678,7 @@ set(DISSECTOR_PUBLIC_HEADERS
 	packet-zbee-zdp.h
 	packet-rf4ce-secur.h
 	packet-ziop.h
+	packet-zwave.h
 )
 
 set(DISSECTOR_HEADER_FILES
@@ -2162,6 +2163,8 @@ set(DISSECTOR_SRC
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-zmtp.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-zrtp.c
 	${CMAKE_CURRENT_SOURCE_DIR}/packet-zvt.c
+	${CMAKE_CURRENT_SOURCE_DIR}/packet-zwave.c
+	${CMAKE_CURRENT_SOURCE_DIR}/packet-zwave-sec0-decrypt.c
 )
 
 set(DISSECTOR_SUPPORT_SRC
